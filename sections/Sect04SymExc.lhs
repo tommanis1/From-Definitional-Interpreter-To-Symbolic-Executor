@@ -483,7 +483,7 @@ append0 =
      `CEq` (var "q")))
 \end{code}
 Here, |append| is a recursive function defined in the language we are symbolically executing (\cref{fig:syntax}), and |@@| is syntactic sugar for |`App`|.
-Solving the |append0| constraint yields the instantiation of |q| to the list contaning all input atoms in sequence.
+Solving the |append0| constraint yields the instantiation of |q| to the list containing all input atoms in sequence.
 
 We can also use symbolic execution to synthesize inputs to functions:
 \begin{code}

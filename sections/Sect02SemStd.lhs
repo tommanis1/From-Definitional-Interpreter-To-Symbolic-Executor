@@ -131,11 +131,11 @@ interp (App e_1 e_2) = do
 \hspace{2em}
 \begin{boxedminipage}[c][26em]{0.42\linewidth}
 \begin{code}
-interp (Let xes e) = do
-  nv <- mmap interpSnd xes
-  local (\ nv_0 -> nv ++ nv_0) (interp e)
-  where interpSnd (x, e) = do
-          v <- interp e; return (x, v)
+--interp (Let xes e) = do
+--  nv <- mmap interpSnd xes
+--  local (\ nv_0 -> nv ++ nv_0) (interp e)
+--  where interpSnd (x, e) = do
+--          v <- interp e; return (x, v)
 interp (Letrec xves e) = do
   nv <- ask
   let  nv_b  = map (mapSnd (interpval nv_r)) xves

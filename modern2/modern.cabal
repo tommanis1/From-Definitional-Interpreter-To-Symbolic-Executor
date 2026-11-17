@@ -1,0 +1,23 @@
+cabal-version:      >=1.10
+name:               modern
+version:            0.1.0.0
+build-type:         Simple
+license:            NONE
+
+library
+  exposed-modules:
+      Lib
+      ListMonad
+      Sect02SemStd
+      Sect03TowardsSymExc
+      Sect04SymExc
+      Sect05Correctness
+      Sect06TestGen
+      Sugar
+  hs-source-dirs:   src
+  build-depends:    base >=4.7 && <5,
+                    mtl,
+                    transformers,
+                    containers,
+                    utility-ht
+  default-language: Haskell2010
